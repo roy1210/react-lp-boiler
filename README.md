@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Landing page
 
-## Available Scripts
+Landing Page: [http://example.com/](http://example.com/)
 
-In the project directory, you can run:
+## Environment
 
-### `yarn start`
+```zsh
+$ node -v
+v10.17.0
+$ yarn -v
+v1.22.4
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React: `16.13.1`
+- TypeScript: `3.7.2`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Dependencies
 
-### `yarn test`
+### For Application
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [semantic-ui-react](https://react.semantic-ui.com/)
+  - The official React integration for Semantic UI.
+- [styled-components](https://www.styled-components.com/)
+  - Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
+- [styled-media-query](https://github.com/morajabi/styled-media-query)
+  - Better media queries for styled-component.
 
-### `yarn build`
+### For Development
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
+  - TypeScript ESLint.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Package manager
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [yarn](https://yarnpkg.com/)
+  - Fast, reliable, and secure dependency management.
 
-### `yarn eject`
+## How To Use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+$ yarn
+$ yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How To Contribute
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project is using [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint). When you push your branch to remote ones, please run `yarn lint --fix` to comply to the code convention.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+When you add a new library, please make sure its license is not [GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License). And please use `-D` for @types.
