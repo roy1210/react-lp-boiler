@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+html {
+  /* Memo: Make root font size to 10px */
+  font-size: 62.5%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "D-DIN";
+  src: url(/src/styles/fonts/D-DIN.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+ul,
+li,
+a {
+  font-family: "D-DIN", -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+/* code {
+  font-family: "D-DIN", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
