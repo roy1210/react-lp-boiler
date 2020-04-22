@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Main from "./components/pages/Main";
+import Main from "./components/Main";
 import { Path } from "./data/constants";
 
 const App = (): JSX.Element => {
