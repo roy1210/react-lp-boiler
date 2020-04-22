@@ -3,7 +3,7 @@ import { theme } from "../theme";
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
-  padding: 0.5em 2em;
+  padding: 1rem 2rem;
   color: ${theme.colors.white};
   display: flex;
   justify-content: space-between;
@@ -24,15 +24,15 @@ export const NavbarContainer = styled.div`
       display: flex;
       align-items: center;
       cursor: pointer;
-      height: 3em;
+      height: 5rem;
       img {
-        height: 3em;
+        height: 5rem;
       }
     }
     .nav {
       display: flex;
       justify-content: space-between;
-      width: 30em;
+      width: 54rem;
       list-style: none;
       ${customMedia.lessThan("mobile")`
         display: none;

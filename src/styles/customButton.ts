@@ -4,14 +4,18 @@ import styled from "styled-components";
 
 export const ButtonA = styled.a`
   position: relative;
-  width: 16em;
-  height: 3.6em;
-  border-radius: 2em;
+  width: 19rem;
+  height: 4.5rem;
+  border-radius: 2.5rem;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   display: grid;
   align-items: center;
+  ${customMedia.lessThan("mobile")`
+    width: 14.5rem;
+    font-size: 0.8rem;
+  `}
 
   ${(props: { color?: string }): string =>
     props.color === "inverted"
@@ -35,18 +39,19 @@ export const ButtonA = styled.a`
              `};
 
   ${customMedia.lessThan("mobile")`
-  font-size: 1rem;
+    font-size: 1rem;
   `}
   .button-arrow {
     position: absolute;
-    right: 1.2em;
-    top: 0.95em;
+    right: 1.5rem;
+    top: 1.2rem;
     font-weight: bold;
     ${customMedia.lessThan("mobile")`
-    top: 0.7em;
+     top: 1.1rem;
+      right: 1rem;
     `}
   }
   span {
-    margin-right: 1.8em;
+    margin-right: 1.8rem;
   }
 `;

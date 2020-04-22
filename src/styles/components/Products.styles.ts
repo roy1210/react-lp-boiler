@@ -6,28 +6,17 @@ export const ProductsContainer = styled.div`
   color: ${theme.colors.white};
 
   .wrapper {
-    margin-top: 15em;
-    padding: 0 12em;
-
-    ${customMedia.lessThan("desktop")`
-      padding: 0 8em;
-    `}
-    ${customMedia.lessThan("laptop")`
-      padding: 0 2em;
-    `}
-    ${customMedia.lessThan("smallLaptop")`
-      padding: 0
-    `}
+    margin-top: 24rem;
     h4 {
       font-size: 1.6rem;
-      margin-bottom: 3.2em;
-          ${customMedia.lessThan("smallLaptop")`
+      margin-bottom: 5rem;
+      ${customMedia.lessThan("smallLaptop")`
       padding: 0
     `}
     }
     .product {
       display: grid;
-      grid-template-columns: 34em auto;
+      grid-template-columns: 56rem auto;
       ${customMedia.lessThan("laptop")`
          grid-template-columns: 30em auto;
       `}
@@ -35,7 +24,7 @@ export const ProductsContainer = styled.div`
         grid-template-rows: auto;
         grid-template-columns: none;
       `}
-      margin-bottom: 7em;
+      margin-bottom: 10rem;
       .title {
         font-weight: bold;
         font-size: 7rem;
@@ -44,15 +33,15 @@ export const ProductsContainer = styled.div`
         `}
       }
       .contents {
-        margin-top: 2em;
+        margin-top: 4rem;
         .description {
           font-size: 2rem;
-          margin-bottom: 2em;
+          margin-bottom: 3rem;
         }
         .introduction {
-          margin-bottom: 2em;
+          margin-bottom: 4rem;
           .line-separator {
-            margin-bottom: 1.5em;
+            margin-bottom: 3rem;
           }
         }
         .buttons {
@@ -61,9 +50,9 @@ export const ProductsContainer = styled.div`
             justify-content: center;
           `}
           .separator {
-            margin: 0 1em;
+            margin: 0 1.5rem;
             ${customMedia.lessThan("mobile")`
-            margin: 0 0.2em;
+            margin: 0 0.3rem;
           `}
           }
         }

@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
   /* Memo: Make root font size to 10px */
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   height: 100%;
 }
 
@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-style: normal;
     height: 100%;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

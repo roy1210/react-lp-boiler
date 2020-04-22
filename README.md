@@ -26,6 +26,10 @@ v1.22.4
   - Better media queries for styled-component.
 - [react-burger-menu](https://github.com/negomi/react-burger-menu)
   - An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations
+- [rxjs](https://github.com/ReactiveX/rxjs)
+  - A reactive programming library for JavaScript
+- [rxjs-hooks](https://github.com/LeetCode-OpenSource/rxjs-hooks)
+  - React hooks for RxJS
 
 ### For Development
 

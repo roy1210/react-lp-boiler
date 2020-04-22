@@ -4,22 +4,21 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.div`
   color: ${theme.colors.white};
-
   .wrapper {
-    margin-top: 5em;
-    padding: 4.5em 0;
+    margin-top: 5rem;
+    padding: 8rem 0;
     display: grid;
     grid-template-rows: 2fr;
-    grid-row-gap: 4.5em;
+    grid-row-gap: 8rem;
 
     .announcement {
-      width: 40em;
-      height: 6em;
-      padding: 0 1em;
+      width: 60rem;
+      height: 9rem;
+      padding: 0 2rem;
       background-color: ${theme.colors.darkTransparent};
       ${customMedia.greaterThan("mobile")`
-        display: flex;
-        justify-content: space-around;
+      display: flex;
+      justify-content: space-around;
       `}
       ${customMedia.lessThan("mobile")`
         width: 100%;
@@ -37,20 +36,20 @@ export const HeroContainer = styled.div`
         font-weight: bold;
         display: flex;
         img {
-          margin-left: 1em;
+          margin-left: 1.5rem;
         }
       }
       .contents {
         display: flex;
         justify-content: space-between;
         ${customMedia.lessThan("mobile")`
-          margin-top: 1em;
+          margin-top: 1rem;
         `}
         .arrow {
-          margin-left: 3em;
+          margin-left: 5rem;
           font-size: 2rem;
           ${customMedia.lessThan("mobile")`
-            margin-left: 1em;
+            margin-left: 1rem;
             font-size: 1.7rem;
           `}
         }
@@ -70,10 +69,7 @@ export const HeroContainer = styled.div`
         justify-content: center;
       `}
       .separator {
-        margin: 0 1em;
-        ${customMedia.lessThan("mobile")`
-        margin: 0 0.2em;
-        `}
+        margin: 0 1.5rem;
       }
     }
   }
