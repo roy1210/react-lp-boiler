@@ -3,11 +3,11 @@ import { theme } from "../theme";
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  margin-top: 5em;
-  padding: 4.5em 0;
   color: ${theme.colors.white};
 
   .wrapper {
+    margin-top: 5em;
+    padding: 4.5em 0;
     display: grid;
     grid-template-rows: 2fr;
     grid-row-gap: 4.5em;

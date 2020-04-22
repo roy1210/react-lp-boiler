@@ -29,7 +29,7 @@ const Hero = (): JSX.Element => {
         </div>
         <div className="buttons">
           <ButtonA href="/">
-            <span>JOIN TELEGRAM</span>
+            <span>JOIN DISCORD</span>
             <Icon name="arrow right" className="button-arrow" />
           </ButtonA>
           <span className="separator" />

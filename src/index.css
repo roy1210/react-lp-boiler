@@ -1,5 +1,4 @@
-html {
-  /* Memo: Make root font size to 10px */
+/* html {
   font-size: 62.5%;
   height: 100%;
 }
@@ -24,7 +23,7 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
+code {
   font-family: "D-DIN", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 } */

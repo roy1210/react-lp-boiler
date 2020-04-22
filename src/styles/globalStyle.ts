@@ -20,12 +20,20 @@ export const GlobalStyle = createGlobalStyle`
   outline: none;
   }
 
+  html {
+  /* Memo: Make root font size to 10px */
+  font-size: 62.5%;
+  height: 100%;
+}
+
   /* Memo: To make footer attached to the bottom  */
-  /* Need to define 'flex: 1;' in the div above the footer  */
   #root{
     height: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .footer-pusher {
+    flex: 1;
   }
 
   body {
@@ -41,6 +49,26 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  @font-face {
+  font-family: "D-DIN";
+  src: url(/src/styles/fonts/D-DIN.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+ul,
+li,
+a {
+  font-family: "D-DIN", -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
   .align-self {
     align-self: center;

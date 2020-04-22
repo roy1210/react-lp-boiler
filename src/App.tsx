@@ -2,20 +2,24 @@ import React from "react";
 import { GlobalStyle, customMedia } from "./styles/globalStyle";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Main from "./components/pages/Main";
+import { Path } from "./data/constants";
 
 const App = (): JSX.Element => {
   return (
     <>
       <Header />
-
       <SidePadding>
-        <Hero />
+        <Router>
+          <Switch>
+            <Route path={Path.ROOT} component={Main} />
+          </Switch>
+        </Router>
       </SidePadding>
-
       {/* Memo: make Footer stick on bottom */}
-      <div style={{ flex: 1 }} />
+      <div className="footer-pusher" />
       <Footer />
       <GlobalStyle />
     </>

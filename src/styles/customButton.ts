@@ -4,22 +4,36 @@ import styled from "styled-components";
 
 export const ButtonA = styled.a`
   position: relative;
-  background-color: ${theme.colors.white};
   width: 16em;
   height: 3.6em;
   border-radius: 2em;
   font-size: 1.2rem;
   font-weight: bold;
-  color: ${theme.colors.black};
   text-align: center;
-  cursor: pointer;
   display: grid;
   align-items: center;
-  :hover {
-    color: ${theme.colors.black};
-    background-color: ${theme.colors.lightBlue};
-    transition: all 0.4s ease 0s;
-  }
+
+  ${(props: { color?: string }): string =>
+    props.color === "inverted"
+      ? `
+             background-color:${theme.colors.black};
+             color: ${theme.colors.white};
+             cursor: default;
+             :hover {
+                color: ${theme.colors.white};
+             }
+             `
+      : `
+             background-color:${theme.colors.white};
+             color: ${theme.colors.black};
+             cursor: pointer;
+               :hover {
+                color: ${theme.colors.black};
+                background-color: ${theme.colors.lightBlue};
+                transition: all 0.4s ease 0s;
+                }
+             `};
+
   ${customMedia.lessThan("mobile")`
   font-size: 1rem;
   `}
