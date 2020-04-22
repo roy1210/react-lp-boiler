@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-  .footer-pusher {
+  .Footer-pusher {
     flex: 1;
   }
 
@@ -54,24 +54,46 @@ export const GlobalStyle = createGlobalStyle`
   src: url(/src/styles/fonts/D-DIN.woff) format("woff");
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-span,
-ul,
-li,
-a {
-  font-family: "D-DIN", -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span,
+  ul,
+  li,
+  a {
+    font-family: "D-DIN", -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
+  /* Memo: Scroll settings for chrome and safari */
+  ::-webkit-scrollbar {
+    width: 1.2rem;
+    height: 1rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: ${theme.colors.darkTransparent};
+  }
+  /* Memo: Scroll settings for firefox */
+  :root {
+    scrollbar-color: ${theme.colors.darkTransparent} ${theme.colors.transparent};
+  }
 
-  .align-self {
+  .Section-title {
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    
+  }
+
+  .Align-self-center {
     align-self: center;
+  }
+  .Center{
+    text-align: center;
   }
 
 `;

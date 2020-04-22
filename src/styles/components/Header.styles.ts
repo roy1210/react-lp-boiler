@@ -59,11 +59,6 @@ export const NavbarContainer = styled.div`
     top: 18px;
   }
 
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: ${theme.colors.white};
-  }
-
   .nav-sidebar {
     list-style: none;
     padding-left: 0;
@@ -71,6 +66,11 @@ export const NavbarContainer = styled.div`
       cursor: pointer;
       margin-bottom: 1em;
     }
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: ${theme.colors.white};
   }
 
   /* Color/shape of burger icon bars on hover*/

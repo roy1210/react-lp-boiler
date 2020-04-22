@@ -10,7 +10,11 @@ const Announcement = (): JSX.Element => {
         <div className="announcement">
           <p className="top">
             Announcement
-            <img src={rectangle} alt="rectangle" className="align-self" />
+            <img
+              src={rectangle}
+              alt="rectangle"
+              className="Align-self-center"
+            />
           </p>
           <h1 className="description">Campaign nonumy kasd tempor.</h1>
           <ButtonA href="/" rel="noopener noreferrer" target="_blank">

@@ -9,10 +9,7 @@ export const ProductsContainer = styled.div`
     margin-top: 24rem;
     h4 {
       font-size: 1.6rem;
-      margin-bottom: 5rem;
-      ${customMedia.lessThan("smallLaptop")`
-      padding: 0
-    `}
+      margin-bottom: 6rem;
     }
     .product {
       display: grid;

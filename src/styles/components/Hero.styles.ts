@@ -10,6 +10,10 @@ export const HeroContainer = styled.div`
     display: grid;
     grid-template-rows: 2fr;
     grid-row-gap: 8rem;
+    ${customMedia.greaterThan("desktop")`
+        margin-left:-18rem;
+        margin-right:-18rem;
+      `}
 
     .announcement {
       width: 60rem;

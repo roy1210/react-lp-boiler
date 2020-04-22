@@ -19,7 +19,7 @@ const App = (): JSX.Element => {
         </Router>
       </SidePadding>
       {/* Memo: make Footer stick on bottom */}
-      <div className="footer-pusher" />
+      <div className="Footer-pusher" />
       <Footer />
       <GlobalStyle />
     </>
@@ -29,8 +29,12 @@ const App = (): JSX.Element => {
 export default App;
 
 const SidePadding = styled.div`
-  padding: 0 4rem;
-  ${customMedia.lessThan("mobile")`
-    padding: 0 2rem;
-  `}
+  padding: 0 24rem;
+
+  ${customMedia.lessThan("desktop")`
+       padding: 0 8rem;
+     `}
+  ${customMedia.lessThan("laptop")`
+       padding: 0 2rem;
+     `}
 `;

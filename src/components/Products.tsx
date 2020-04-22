@@ -7,7 +7,7 @@ const Products = (): JSX.Element => {
   return (
     <ProductsContainer>
       <div className="wrapper">
-        <h4>PRODUCT - LOREM IPSUM</h4>
+        <p className="Section-title">PRODUCT - LOREM IPSUM</p>
         <div className="product">
           <h1 className="title">Product1</h1>
           <div className="contents">

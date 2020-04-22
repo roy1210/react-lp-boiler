@@ -9,16 +9,20 @@ const Hero = (): JSX.Element => {
     <HeroContainer>
       <div className="wrapper">
         <div className="announcement">
-          <p className="align-self top">
+          <p className="Align-self-center top">
             TOP Announcement
-            <img src={rectangle} alt="rectangle" className="align-self" />
+            <img
+              src={rectangle}
+              alt="rectangle"
+              className="Align-self-center"
+            />
           </p>
-          <div className="contents align-self">
+          <div className="contents Align-self-center">
             <div>
               <p>lorem and ipsum to lorem ipsum</p>
               <p>on June 8,2020</p>
             </div>
-            <Icon name="arrow right" className="align-self arrow" />
+            <Icon name="arrow right" className="Align-self-center arrow" />
           </div>
         </div>
         <div className="title">
