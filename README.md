@@ -1,13 +1,13 @@
 # Landing page
 
-Landing Page: [http://example.com/](http://example.com/)
+Landing Page: [lp-example-roy1210.netlify.app](lp-example-roy1210.netlify.app)
 
 ## Environment
 
 ```zsh
 $ node -v
 v10.17.0
-$ yarn -v
+$ yarn -vs
 v1.22.4
 ```
 
