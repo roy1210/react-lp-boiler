@@ -9,6 +9,7 @@ export const customMedia = generateMedia({
   smallLaptop: "992px",
   tablet: "768px",
   mobile: "750px",
+  mobileSecondary: "400px",
 });
 
 export const GlobalStyle = createGlobalStyle`
@@ -26,15 +27,15 @@ export const GlobalStyle = createGlobalStyle`
   height: 100%;
 }
 
-  /* Memo: To make footer attached to the bottom  */
-  #root{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Footer-pusher {
+#root{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Memo: To make footer attached to the bottom  */
+  /* .Footer-pusher {
     flex: 1;
-  }
+  } */
 
   body {
     background-attachment: fixed;
@@ -74,19 +75,24 @@ export const GlobalStyle = createGlobalStyle`
     width: 1.2rem;
     height: 1rem;
   }
+  ::-webkit-scrollbar-track {
+  border-radius: 4px;
+  box-shadow: 0 0 2px ${theme.colors.softNavy} inset;
+  /* box-shadow: 0 0 4px #aaa inset; */
+}
   ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: ${theme.colors.darkTransparent};
   }
   /* Memo: Scroll settings for firefox */
-  :root {
+  /* :root {
     scrollbar-color: ${theme.colors.darkTransparent} ${theme.colors.transparent};
-  }
+  } */
 
   .Section-title {
     font-size: 1.6rem;
     margin-bottom: 6rem;
-    
+
   }
 
   .Align-self-center {

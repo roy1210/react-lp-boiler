@@ -9,7 +9,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
   transition: all 300ms ease-in;
   &.hidden {
@@ -97,7 +97,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
-    margin-top: -2.1em;
+    margin-top: -4rem;
   }
 
   /* General sidebar styles */

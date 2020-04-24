@@ -10,17 +10,19 @@ import { Path } from "./data/constants";
 const App = (): JSX.Element => {
   return (
     <>
-      <Header />
-      <SidePadding>
-        <Router>
-          <Switch>
-            <Route path={Path.ROOT} component={Main} />
-          </Switch>
-        </Router>
-      </SidePadding>
-      {/* Memo: make Footer stick on bottom */}
-      <div className="Footer-pusher" />
-      <Footer />
+      {/* Memo: using outer-container and page-wrap to prohibit scrolling when click hamburger menu */}
+      <div id="outer-container">
+        <Header />
+        <SidePadding id="page-wrap">
+          <Router>
+            <Switch>
+              <Route path={Path.ROOT} component={Main} />
+            </Switch>
+          </Router>
+        </SidePadding>
+        {/* <div className="Footer-pusher" /> */}
+        <Footer />
+      </div>
       <GlobalStyle />
     </>
   );

@@ -2,7 +2,10 @@ import React from "react";
 import { RoadmapContainer } from "../styles/components/Roadmap.styles";
 import partnerLogo from "../resources/blockchain-alliance-logo-white.png";
 import { Icon } from "semantic-ui-react";
-import longRectangle from "../resources/long-rectangle.svg";
+import mobileRectangle from "../resources/mobile-rectangle.svg";
+import rectangle from "../resources/long-rectangle.svg";
+import { Timeline } from "../types/types";
+import { Timelines } from "../data/timelines";
 
 const Roadmap = (): JSX.Element => {
   return (
@@ -14,97 +17,37 @@ const Roadmap = (): JSX.Element => {
         </div>
         <div className="roadmap">
           <h4 className="Section-title Center">ROAD MAP</h4>
-          <div className="row">
-            <div className="schedule left">
-              <div className="circle-mobile">
-                <img
-                  src={longRectangle}
-                  alt="rectangle"
-                  className="rectangle"
-                />
-                <br />
-                <Icon name="circle" />
-              </div>
-              <h3 className="month">
-                <Icon name="circle" className="circle" />
-                JAN 2020
-              </h3>
-              <h1 className="title">Ea Et Ipsum</h1>
-              <p className="description">
-                Diam stet dolores no sed diam et. Amet diam rebum et lorem stet.
-              </p>
-            </div>
-            <div />
+          <div className="rectangle-container">
+            <img src={rectangle} alt="rectangle" className="long-rectangle" />
           </div>
 
-          <div className="row">
-            <div />
-            <div className="schedule right">
-              <div className="circle-mobile">
-                <img
-                  src={longRectangle}
-                  alt="rectangle"
-                  className="rectangle"
-                />
-                <br />
-                <Icon name="circle" />
+          {Timelines.map((timeline: Timeline, i: number) => (
+            <div className="row" key={timeline.title}>
+              {i % 2 !== 0 && <div />}
+              <div
+                className={`${
+                  i % 2 === 0 ? "schedule left" : "schedule right"
+                }`}
+              >
+                <div className="circle-small-laptop">
+                  <img
+                    src={mobileRectangle}
+                    alt="rectangle"
+                    className="rectangle"
+                  />
+                  <br />
+                  <Icon name="circle" />
+                </div>
+                <h3 className="month">
+                  <Icon name="circle" className="circle" />
+                  {timeline.month}
+                </h3>
+                <h1 className="title">{timeline.title}</h1>
+                <p className="description">{timeline.description}</p>
               </div>
-              <h3 className="month">
-                <Icon name="circle" className="circle" />
-                FEB 2020
-              </h3>
-              <h1 className="title">Ea Et Ipsum</h1>
-              <p className="description">
-                Diam stet dolores no sed diam et. Amet diam rebum et lorem stet.
-              </p>
+              {i % 2 === 0 && <div />}
             </div>
-          </div>
-
-          <div className="row">
-            <div className="schedule left">
-              <div className="circle-mobile">
-                <img
-                  src={longRectangle}
-                  alt="rectangle"
-                  className="rectangle"
-                />
-                <br />
-                <Icon name="circle" />
-              </div>
-              <h3 className="month">
-                <Icon name="circle" className="circle" />
-                JAN 2020
-              </h3>
-              <h1 className="title">Ea Et Ipsum</h1>
-              <p className="description">
-                Diam stet dolores no sed diam et. Amet diam rebum et lorem stet.
-              </p>
-            </div>
-            <div />
-          </div>
-
-          <div className="row">
-            <div />
-            <div className="schedule right">
-              <div className="circle-mobile">
-                <img
-                  src={longRectangle}
-                  alt="rectangle"
-                  className="rectangle"
-                />
-                <br />
-                <Icon name="circle" />
-              </div>
-              <h3 className="month">
-                <Icon name="circle" className="circle" />
-                FEB 2020
-              </h3>
-              <h1 className="title">Ea Et Ipsum</h1>
-              <p className="description">
-                Diam stet dolores no sed diam et. Amet diam rebum et lorem stet.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </RoadmapContainer>

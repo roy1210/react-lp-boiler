@@ -51,6 +51,7 @@ const Header = (): JSX.Element => {
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
           right
+          htmlClassName={"my-class"}
         >
           <ul className="nav-sidebar">
             <li>PRODUCT</li>

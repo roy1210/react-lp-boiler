@@ -37,7 +37,7 @@ const colors = {
   white: "#ffffff",
   black: "#000000",
   grey: "#333333",
-  lightGrey: "#A6A5BC",
+  lightGrey: "rgba(255, 255, 255, 0.1)",
   darkGrey: "rgba(255, 255, 255, 0.1)",
   softGrey: "#1D1B4D",
   slaty: "#797992",
@@ -48,6 +48,7 @@ const colors = {
 };
 
 const secondaryColors = {
+  lightGrey10: "rgba(255, 255, 255, 0.3)",
   grey10: "#f3f4f8",
   grey20: "#e1e5eb",
   grey30: "#c2c6cc",

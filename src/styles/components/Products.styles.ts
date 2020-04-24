@@ -7,10 +7,7 @@ export const ProductsContainer = styled.div`
 
   .wrapper {
     margin-top: 24rem;
-    h4 {
-      font-size: 1.6rem;
-      margin-bottom: 6rem;
-    }
+
     .product {
       display: grid;
       grid-template-columns: 56rem auto;
@@ -37,6 +34,8 @@ export const ProductsContainer = styled.div`
         }
         .introduction {
           margin-bottom: 4rem;
+          text-align: justify !important;
+          text-justify: inter-word;
           .line-separator {
             margin-bottom: 3rem;
           }
@@ -49,7 +48,7 @@ export const ProductsContainer = styled.div`
           .separator {
             margin: 0 1.5rem;
             ${customMedia.lessThan("mobile")`
-            margin: 0 0.3rem;
+            /* margin: 0 0.3rem; */
           `}
           }
         }

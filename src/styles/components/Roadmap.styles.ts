@@ -1,11 +1,15 @@
 import { customMedia } from "./../globalStyle";
 import { theme } from "./../theme";
 import styled from "styled-components";
+
 export const RoadmapContainer = styled.div`
   color: ${theme.colors.white};
 
   .wrapper {
+    margin: 0 auto;
     margin-top: 12rem;
+    max-width: 1100px !important;
+    padding: auto;
 
     .partners {
       margin-bottom: 6rem;
@@ -16,26 +20,36 @@ export const RoadmapContainer = styled.div`
     }
     .roadmap {
       h4 {
-        ${customMedia.lessThan("mobile")`
-          margin-bottom: 12rem;
+        margin-bottom: 12rem;
+      }
+      .rectangle-container {
+        margin-bottom: 20rem;
+        text-align: center;
+        ${customMedia.lessThan("smallLaptop")`
+          display: none;
         `}
+        .long-rectangle {
+          position: absolute;
+          height: 180rem;
+        }
       }
       .row {
         width: 100%;
+        height: 28rem;
         display: grid;
         grid-template-columns: 50% 50%;
         justify-items: center;
-        ${customMedia.lessThan("mobile")`
+        ${customMedia.lessThan("smallLaptop")`
           grid-template-columns: 1fr;
           text-align: center;
         `}
         .schedule {
           margin-bottom: 8rem;
-          ${customMedia.lessThan("mobile")`
+          ${customMedia.lessThan("smallLaptop")`
               margin-bottom: 12rem;
           `}
-          .circle-mobile {
-            ${customMedia.greaterThan("mobile")`
+          .circle-small-laptop {
+            ${customMedia.greaterThan("smallLaptop")`
             display: none;
             `}
             .rectangle {
@@ -49,7 +63,7 @@ export const RoadmapContainer = styled.div`
             .circle {
               font-size: 1.7rem;
               margin: 0 0.5rem;
-              ${customMedia.lessThan("mobile")`
+              ${customMedia.lessThan("smallLaptop")`
                 display: none;
               `}
             }
@@ -76,7 +90,7 @@ export const RoadmapContainer = styled.div`
             flex-direction: row-reverse;
             text-align: right;
             margin-right: -1.5rem;
-            ${customMedia.lessThan("mobile")`
+            ${customMedia.lessThan("smallLaptop")`
                    flex-direction: column;
                    text-align: center;
                    margin-right: 0;
@@ -92,12 +106,18 @@ export const RoadmapContainer = styled.div`
             flex-direction: row;
             text-align: left;
             margin-left: -1.5rem;
-            ${customMedia.lessThan("mobile")`
+            ${customMedia.lessThan("smallLaptop")`
               flex-direction: column;
               text-align: center;
               margin-left: 0;
             `}
           }
+        }
+        .description {
+          ${customMedia.lessThan("smallLaptop")`
+              text-align: justify !important;;
+              text-justify: inter-word;
+          `}
         }
       }
     }
