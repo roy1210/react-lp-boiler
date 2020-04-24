@@ -1,6 +1,6 @@
 # Landing page
 
-Landing Page: [lp-example-roy1210.netlify.app](lp-example-roy1210.netlify.app)
+Landing Page: [lp-example-roy1210.netlify.app](https://lp-example-roy1210.netlify.app/)
 
 ## Environment
 
