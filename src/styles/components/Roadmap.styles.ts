@@ -12,10 +12,9 @@ export const RoadmapContainer = styled.div`
     padding: auto;
 
     .partners {
-      margin-bottom: 6rem;
+      margin-bottom: 12rem;
       .partner-logo {
         width: 16rem;
-        padding: 3rem 0;
       }
     }
     .roadmap {
